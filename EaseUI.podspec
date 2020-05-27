@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.libraries    = 'stdc++'
   spec.resource     = 'EaseUI/resources/EaseUIResource.bundle'
   spec.xcconfig     = {'OTHER_LDFLAGS' => '-ObjC'}
-  spec.dependency 'MWPhotoBrowser', :git => 'https://github.com/crazytom26/MWPhotoBrowser.git', :commit => 'fb8234a9f16f8d9d950dc96f3feb15bbe47c9efc'   
+  spec.dependency 'MWPhotoBrowser'
   spec.dependency 'MJRefresh', '~> 3.1.0'
   spec.dependency 'Hyphenate', '~> 3.5.3'
 end
