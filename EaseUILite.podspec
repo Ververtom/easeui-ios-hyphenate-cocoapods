@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.summary      = 'EaseMob UI Kit'
   spec.homepage     = 'https://github.com/easemob/easeui-ios-hyphenate-cocoapods'
   spec.author       = {'EaseMob Inc.' => 'admin@easemob.com'}
-  spec.source       =  {:git => 'https://github.com/easemob/easeui-ios-hyphenate-cocoapods.git', :tag => spec.version.to_s }
+  spec.source       =  {:git => 'https://github.com/crazytom26/easeui-ios-hyphenate-cocoapods.git', :tag => spec.version.to_s }
   spec.source_files = 'EaseUI/**/*.{h,m,mm}'
   spec.public_header_files = '**/*.{h}'
   spec.private_header_files = ['EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/amrwapper/wav.h','EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/amrwapper/amrFileCodec.h','EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb/*.h','EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb/*.h']
@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.libraries    = 'stdc++'
   spec.resource     = 'EaseUI/resources/EaseUIResource.bundle'
   spec.xcconfig     = {'OTHER_LDFLAGS' => '-ObjC', 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_LITE=1'}
-  spec.dependency 'MWPhotoBrowser', '~> 2.1.1'    
+  spec.dependency 'MWPhotoBrowser', :git => 'https://github.com/crazytom26/MWPhotoBrowser.git', :commit => 'fb8234a9f16f8d9d950dc96f3feb15bbe47c9efc'    
   spec.dependency 'MJRefresh', '~> 3.1.0'
   spec.dependency 'HyphenateLite', '~> 3.5.3'
 end
