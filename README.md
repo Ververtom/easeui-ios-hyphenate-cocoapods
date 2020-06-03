@@ -7,8 +7,8 @@
 
 1. Podfile 文件添加如下代码(建议集成EaseUI时指定其版本，与SDK保持版本相同)
 
-		pod 'EaseUI', :git => 'https://github.com/easemob/easeui-ios-hyphenate-cocoapods.git', :tag => '3.3.2'
-		
+		#pod 'EaseUI', :git => 'https://github.com/easemob/easeui-ios-hyphenate-cocoapods.git', :tag => '3.3.2'
+		pod 'EaseUI', :git => 'https://github.com/crazytom26/easeui-ios-hyphenate-cocoapods.git', :commit => 'be284d27f55da1f60a734f05683364f7caa1568f'
 2. 使用时, 需要引入头文件, 在 pch 预编译文件中, 引入头文件如下:
 
 		#import <EaseUI/EaseUI.h>
@@ -18,7 +18,7 @@
 
 注意：由于SDK改成了动态库，EaseUI引入的头文件Full版本和Lite版本不同，导致集成EaseUI失败。代码中包含了宏`ENABLE_LITE`的定义这个是为了区分集成Lite版本SDK还是Full版本SDK，当通过pod在集成`EaseUILite `时会在`Build Settings> GCC_PREPROCESSOR_DEFINITIONS >ENABLE_LITE=1`中定义`ENABLE_LITE`，集成`EaseUI`时则不会定义，所以开发者不需要关注这个字段，如果集成Lite版本SDK，建议使用
 
-		pod 'EaseUILite', :git =>'https://github.com/easemob/easeui-ios-hyphenate-cocoapods.git'
+		pod 'EaseUILite', :git =>'https://github.com/crazytom26/easeui-ios-hyphenate-cocoapods.git', :commit => 'be284d27f55da1f60a734f05683364f7caa1568f'
 		
 		//引入头文件
 		#import <EaseUILite/EaseUI.h>
