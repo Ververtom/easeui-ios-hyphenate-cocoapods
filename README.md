@@ -8,7 +8,7 @@
 1. Podfile 文件添加如下代码(建议集成EaseUI时指定其版本，与SDK保持版本相同)
 
 		#pod 'EaseUI', :git => 'https://github.com/easemob/easeui-ios-hyphenate-cocoapods.git', :tag => '3.3.2'
-		pod 'EaseUI', :git => 'https://github.com/Ververtom/easeui-ios-hyphenate-cocoapods.git', :commit => '90de2c4c2fb75e186168262c4068c4b631dc89ab'
+		pod 'EaseUI', :git => 'https://github.com/Ververtom/easeui-ios-hyphenate-cocoapods.git', :commit => 'eb126e41231937db618aec5b33fa65e5a93f1720'
 2. 使用时, 需要引入头文件, 在 pch 预编译文件中, 引入头文件如下:
 
 		#import <EaseUI/EaseUI.h>
