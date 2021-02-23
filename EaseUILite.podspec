@@ -19,5 +19,5 @@ Pod::Spec.new do |spec|
   spec.xcconfig     = {'OTHER_LDFLAGS' => '-ObjC', 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_LITE=1'}
   spec.dependency 'MWPhotoBrowser'  
   spec.dependency 'MJRefresh', '~> 3.1.0'
-  spec.dependency 'HyphenateLite', '3.7.1'
+  spec.dependency 'HyphenateLite', '3.7.4'
 end
