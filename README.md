@@ -18,7 +18,7 @@
 
 注意：由于SDK改成了动态库，EaseUI引入的头文件Full版本和Lite版本不同，导致集成EaseUI失败。代码中包含了宏`ENABLE_LITE`的定义这个是为了区分集成Lite版本SDK还是Full版本SDK，当通过pod在集成`EaseUILite `时会在`Build Settings> GCC_PREPROCESSOR_DEFINITIONS >ENABLE_LITE=1`中定义`ENABLE_LITE`，集成`EaseUI`时则不会定义，所以开发者不需要关注这个字段，如果集成Lite版本SDK，建议使用
 
-		pod 'EaseUILite', :git =>'https://github.com/Ververtom/easeui-ios-hyphenate-cocoapods.git', :commit => '90de2c4c2fb75e186168262c4068c4b631dc89ab'
+		pod 'EaseUILite', :git =>'https://github.com/Ververtom/easeui-ios-hyphenate-cocoapods.git', :commit => 'eb126e41231937db618aec5b33fa65e5a93f1720'
 		
 		//引入头文件
 		#import <EaseUILite/EaseUI.h>
